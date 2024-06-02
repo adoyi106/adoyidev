@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---SPACING SYSTEM: 
+2/4/8/12/16/24/32/48/64/80/96/120 */
+
+/* -FONT SIZE (PX):
+10/12/14/16/18/20/24/30/36/44/52/62/74/86/98 */
+
+/* :root {
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+/* body {
+  background-color: #000;
+} */
+@layer components {
+  .nav-link {
+    @apply decoration-0 text-3xl inline-block text-[#2d2e32] font-semibold transition-all hover:text-blue-600;
+  }
+  .hero {
+    @apply max-w-[107rem]  h-auto lg:h-[45rem] flex flex-col gap-12 lg:gap-[3rem]  mx-auto justify-center;
+  }
+  .container {
+    @apply max-w-[107rem] px-[3.2rem] mx-auto;
+  }
+  .sticky {
+    @apply fixed top-0 bottom-0 w-full h-[8rem] pt-0 pb-0 bg-[#fffffff6] shadow-6xl z-[999];
+  }
+  /* .sticky .section-hero{
+    @apply mt-[9.6rem]
+  } */
+}
