@@ -4,18 +4,18 @@ function About() {
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 text-center relative">
         <div className="about-image relative">
           <img
-            src="./img/laptop.jpg"
+            src="./image/laptop.jpg"
             alt="laptop"
             className="h-auto w-[90%] lg:h-[35rem] lg:w-[41rem] mx-auto rounded-lg"
           />
           <span className="hidden lg:block animate-rotate bg-white absolute bottom-[-6rem] h-[19rem] w-[19rem] right-[-4rem] rounded-full">
             <img
-              src="./img/fontend.svg"
+              src="./image/fontend.svg"
               alt="fontend"
               className=" lg:w-[19rem] "
             />
             <img
-              src="./img/working-emoji.png"
+              src="./image/working-emoji.png"
               alt="working emoji"
               className="w-[7rem] absolute bottom-[7.5rem] left-[6rem]"
             />

@@ -10,7 +10,7 @@ function Hero() {
               Front-End React Developer
             </h1>
             <img
-              src="./img/waving.png"
+              src="./image/waving.png"
               className="h-[4.5rem] w-[4.5rem] lg:h-[6rem] lg:w-[6rem] absolute right-[3.25rem] top-[5.25rem]  lg:top-[8.25rem] lg:right-[14.25rem]"
               alt="waving hand"
             />
@@ -38,7 +38,7 @@ function Hero() {
             </span>
           </div>
 
-          <div className="hero-image mx-auto animate-ane border-4 border-[#2d2e32] border-solid transition-all duration-[1s] ease-in-out bg-[url('./img/adoyi.png')] h-[35rem] bg-no-repeat bg-cover bg-center w-[31rem] sm:w-[35rem] lg:w-[58rem] lg:h-[40rem] order-first lg:order-last "></div>
+          <div className="hero-image mx-auto animate-ane border-4 border-[#2d2e32] border-solid transition-all duration-[1s] ease-in-out bg-[url('../image/adoyi.png')] h-[35rem] bg-no-repeat bg-cover bg-center w-[31rem] sm:w-[35rem] lg:w-[58rem] lg:h-[40rem] order-first lg:order-last "></div>
         </div>
         <div className="stack flex flex-col lg:flex-row flex-wrap text-3xl items-center gap-12 text-[#2d2e32]">
           <p className=" border-b-[2px] lg:border-b-0 lg:border-r-[2px] font-mulish pb-[2rem] lg:pr-[2rem] border-solid border-[#2d2e32]">
