@@ -21,7 +21,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="sticky h-[9.8rem] py-0 px-[4.8rem] justify-between items-center flex text-[#2d2e32] font-poppins">
+    <header className="header h-[9.8rem] py-0 px-[4.8rem] justify-between items-center flex text-[#2d2e32] font-poppins">
       <Logo />
       <MainNav isOpen={isOpen} />
       <MobileButton isOpen={isOpen} toggle={toggle} />

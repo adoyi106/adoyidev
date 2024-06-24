@@ -1,6 +1,9 @@
 function About() {
   return (
-    <section id="about" className="pt-[4.8rem]  pb-[9.6rem] font-poppins">
+    <section
+      id="about"
+      className="about section-about pt-[4.8rem]  pb-[9.6rem] font-poppins"
+    >
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 text-center relative">
         <div className="about-image relative">
           <img

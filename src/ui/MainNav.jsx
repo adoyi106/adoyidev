@@ -1,14 +1,30 @@
+import { useEffect } from "preact/hooks";
 import { Link } from "react-router-dom";
 
 function MainNav({ isOpen }) {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
+
+    if (section === "home") {
+      console.log("hello");
+    }
     if (section) {
       section.scrollIntoView({
         behavior: "smooth",
       });
     }
   };
+
+  useEffect(function () {
+    const sectionHeroEl = document.getElementById("hero");
+    const obs = new IntersectionObserver(function (entries) {
+      const ent = entries[0];
+      if (ent.isIntersecting) {
+        document.body.classList.add("sticky");
+      }
+    });
+    obs.observe(sectionHeroEl);
+  }, []);
   return (
     <nav>
       {/* <ui className="list-none hidden lg:flex  gap-16 items-center"> */}
@@ -23,7 +39,7 @@ function MainNav({ isOpen }) {
         <li>
           <Link
             className="nav-link"
-            to="/#home"
+            to="#"
             onClick={() => scrollToSection("home")}
           >
             Home
@@ -31,7 +47,7 @@ function MainNav({ isOpen }) {
         </li>
         <li>
           <Link
-            to="/#about"
+            to="#about"
             className="nav-link"
             onClick={() => scrollToSection("about")}
           >
@@ -40,7 +56,7 @@ function MainNav({ isOpen }) {
         </li>
         <li>
           <Link
-            to="/#projects"
+            to="#projects"
             className="nav-link"
             onClick={() => scrollToSection("projects")}
           >
@@ -49,7 +65,7 @@ function MainNav({ isOpen }) {
         </li>
         <li>
           <Link
-            to="/#contact"
+            to="#contact"
             className="nav-link"
             onClick={() => scrollToSection("contact")}
           >

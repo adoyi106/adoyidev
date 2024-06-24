@@ -33,10 +33,10 @@ html {
   .container {
     @apply max-w-[107rem] px-[3.2rem] mx-auto;
   }
-  .sticky {
+  .sticky .header {
     @apply fixed top-0 bottom-0 w-full h-[8rem] pt-0 pb-0 bg-[#fffffff6] shadow-6xl z-[999];
   }
-  /* .sticky .section-hero{
-    @apply mt-[9.6rem]
-  } */
+  .sticky .section-hero {
+    @apply mt-[7.6rem];
+  }
 }
